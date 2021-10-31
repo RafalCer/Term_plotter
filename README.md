@@ -1,18 +1,18 @@
-## Term Plotter
+# Term Plotter
 
 This file contains instructions for the term_plotter.py program. 
 
-# -----Functionality-----
+## -----Functionality-----
 The program outputs a term plot of the tfidf scores of inputted terms in the specified speeches. The outputted graph visualises the prominence of the specified n-grams from a diachronic perspective. Terms that have 0 hits throughout the speeches will not be shown on the graph. Nevertheless, the program will print a statement to notify the user about terms that had 0 hits. 
 
 
-# -----How to run it-----
+## -----How to run it-----
 To run the code, open the command line (cmd) and start the program by running a command in the following format:
 
 > python3 term_plotter.py "term1" "term2" "term3"... (--path path) (--title title) (--output output).
 
 
-# -------Arguments ------
+## -------Arguments ------
 There are four arguments:
 
 - 'terms'      -->  A string or a list of strings that specify the terms you would like to    analyse diachronically
@@ -21,7 +21,7 @@ There are four arguments:
 - '--output'   -->  An optional string whcih specified the preferred name of the file where your graph will be saved. The default name of the file is concatenated terms separated by whitespace. 
 
 
-# --------Example--------
+## --------Example--------
 
 > python3 term_plotter.py "Live" "Laugh" "Love" --path ./important_quotes --title LLL --output this_is_a_joke
 
@@ -30,12 +30,12 @@ OUTPUT:
 (Your graph will be saved in the same directory as the specified path or the current direcotry if the specified path is invalid.)
 
 
-# --------Get help-------
+## --------Get help-------
 If you need help, you can run the following:
 > python3 term_plotter.py -h
 
 
-# -------Exceptions-------
+## -------Exceptions-------
 1. : The following message will appear if neither of the specified terms appears in the speeches.
 
          =============================================================
@@ -53,7 +53,7 @@ If you need help, you can run the following:
 
 3. : Up to five terms can be processed at once. Should more than five terms be inputted, the program will quit instead of executing the general workflow. 
 
-# ----Design-----
+## ----Design-----
 No class included.
 Using argparse to enable the four arguments 'terms','--path', '--title', and '--output';
 
