@@ -27,6 +27,8 @@ There are four arguments:
 
 OUTPUT:
 
+![Live Laugh Love](https://github.com/RafalCer/Term_plotter/blob/main/LLL.png)
+
 (Your graph will be saved in the same directory as the specified path or the current direcotry if the specified path is invalid.)
 
 
